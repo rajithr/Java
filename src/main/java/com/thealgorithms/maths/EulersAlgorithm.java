@@ -25,8 +25,12 @@ public final class EulersAlgorithm {
     public static long hcf(long a, long b) {
         a = Math.abs(a);
         b = Math.abs(b);
-        if (a == 0) return b;
-        if (b == 0) return a;
+        if (a == 0) {
+            return b;
+        }
+        if (b == 0) {
+            return a;
+        }
         while (b != 0) {
             long t = a % b;
             a = b;
